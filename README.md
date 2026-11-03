@@ -6,9 +6,21 @@
 
 ## 📌 PROJECT OVERVIEW
 
-The **Smart Zebra Crossing for Pedestrian Safety** is an Arduino-based hardware prototype designed to improve pedestrian safety through automated traffic signals, road-blocking poles, and a moving escalator-style crossing platform.
+The **Smart Zebra Crossing for Pedestrian Safety** is an innovative hardware prototype developed to improve pedestrian safety through an automated traffic management system.
 
-The system coordinates traffic signals and motor operations to provide a controlled crossing sequence for pedestrians.
+The proposed system combines traffic signal indicators, automatically controlled road-blocking poles, and a moving escalator-style crossing platform. These components work together to create a more organized and controlled pedestrian crossing environment.
+
+The project uses an Arduino-based controller to coordinate the traffic signals and motor operations. The physical prototype demonstrates the timed operation of the signals, pole motor, and escalator motor.
+
+The overall concept aims to reduce dependence on driver awareness and support safer pedestrian movement, particularly in busy areas.
+
+## 🎯 PROJECT OBJECTIVES
+
+- Improve pedestrian safety at road crossings.
+- Develop an automated traffic control mechanism.
+- Coordinate traffic signals with motor-controlled barriers.
+- Demonstrate an escalator-style pedestrian crossing concept.
+- Explore technology-based solutions for sustainable urban infrastructure.
 
 ## ⚠️ PROBLEM STATEMENT
 
@@ -35,16 +47,32 @@ The system uses an Arduino-based controller to coordinate:
 
 ## ⚙️ WORKING PRINCIPLE
 
-The prototype follows a repeating timed sequence:
+The system operates through an Arduino-based controller that coordinates traffic signals and two motor-control channels.
 
-| Stage | Operation | Duration |
-|---|---|---|
-| 🟢 Green | Both motor channels OFF | 5 seconds |
-| 🟡 First Yellow | Pole motor operates in one direction | 3 seconds |
-| 🔴 Red | Escalator motor operates | 10 seconds |
-| 🟡 Second Yellow | Pole motor operates in the opposite direction | 3 seconds |
+The proposed crossing concept works as follows:
 
-The sequence then repeats continuously.
+1. **Pedestrian Request:** In the proposed system, a pedestrian can request crossing assistance through a push button or sensor-based detection.
+
+2. **Traffic Signal Control:** The traffic signal changes according to the crossing sequence to coordinate vehicle and pedestrian movement.
+
+3. **Automatic Pole Operation:** The road-blocking poles are controlled through a motor mechanism to regulate vehicle movement during the crossing phase.
+
+4. **Escalator Platform Operation:** The motor-controlled escalator-style platform is activated as part of the pedestrian crossing sequence.
+
+5. **Completion of Crossing:** After the designated interval, the system proceeds to the next signal and motor-control stage.
+
+### 🔄 ACTUAL PROTOTYPE OPERATION
+
+The Arduino code currently demonstrates the following timed sequence:
+
+| Stage | Signal | Motor Operation | Duration |
+|---|---|---|---|
+| 1 | Green | Both motors OFF | 5 seconds |
+| 2 | Yellow | Pole motor forward | 3 seconds |
+| 3 | Red | Escalator motor ON | 10 seconds |
+| 4 | Yellow | Pole motor reverse | 3 seconds |
+
+The sequence repeats continuously.
 
 ## 🔌 PIN CONFIGURATION
 
