@@ -85,9 +85,8 @@ The sequence then repeats continuously.
 
 ## 📸 PROJECT PROTOTYPE
 
-The project includes a physical hardware prototype demonstrating the traffic signal sequence and motor-controlled movement.
+<img src="project_prototype.jpeg" alt="Smart Zebra Crossing Prototype" width="300">
 
-<!-- Add your prototype image here after uploading it to the repository -->
 
 ## 🏫 PROJECT DETAILS
 
